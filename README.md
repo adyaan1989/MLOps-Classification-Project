@@ -86,9 +86,7 @@ pip install -r requirements.txt
     1-	us_visa > cloud_storage > __init__.py
     2-	us_visa > cloud_storage > aws_storage.py 
 
-### Export the environment variable
-
-    - export MONGODB_URL="mongodb+srv://<username>:<password>...."
+### Export the environment variable from AWS
 
     - export AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID>
 
@@ -137,14 +135,13 @@ pip install -r requirements.txt
 
 ### 2. Create IAM user for deployment
 
-    #### with specific access
+#### with specific access
 
     1- EC2 access : It is virtual machine
 
     2- ECR: Elastic Container registry to save your docker image in aws
 
-
-    #### Description: About the deployment
+#### Description: About the deployment
 
     1- Build docker image of the source code
 
@@ -156,7 +153,7 @@ pip install -r requirements.txt
 
     5- Lauch your docker image in EC2
 
-    #### Policy:
+#### Policy:
 
     1- AmazonEC2ContainerRegistryFullAccess
 
